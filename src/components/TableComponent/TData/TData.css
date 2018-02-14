@@ -1,0 +1,93 @@
+.TData {
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 0 15px;    
+    /* transition: transform .1s ease-in-out; */
+}
+.TData:hover {
+    z-index: 100;
+    border-width: 3px;
+    /* transform: scale(1.2) scaleZ(1); */
+}
+.TData .data {
+    width: 100%;
+}
+
+.TData img.avatar {
+    border-radius: 50%;
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    min-width: 40px;
+}
+
+/* xs devices */
+@media only screen
+and (max-width: 519px) {
+    .TData {
+        flex: 0 1 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    .TData .dataContainer {
+        flex-flow: column nowrap;
+        display: flex;
+    }
+}
+
+/* small devices */
+@media only screen
+and (min-width: 520px)
+and (max-width: 759px) {
+    .TData {
+        flex: 0 1 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .TData .dataContainer {
+        flex-flow: column nowrap;
+        display: flex;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+}
+
+/* large devices */
+@media only screen
+and (min-width: 760px)
+and (max-width: 959px) {
+    .TData {
+        flex: 0 1 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .TData .dataContainer {
+        flex-flow: column nowrap;
+        display: flex;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+}
+
+/* xl devices */
+@media only screen
+and (min-width: 960px) {
+    .TData {
+        flex: 0 1 100%;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    .TData .dataContainer {
+        flex-flow: column nowrap;
+        display: flex;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+}

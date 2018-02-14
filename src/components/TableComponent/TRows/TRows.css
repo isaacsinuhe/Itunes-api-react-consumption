@@ -1,0 +1,93 @@
+.TRows .row:hover {
+    filter: brightness(90%);
+    transition: filter .1s ease-in-out;
+}
+.TRows {
+    color: darkslategray;
+}
+.TRows .row:nth-child(odd) {
+    background-color: whitesmoke;
+}
+.TRows .row:nth-child(even) {
+    background-color: rgb(196, 195, 204);
+}
+.TRows::-webkit-scrollbar {
+    display: none;
+}
+
+/* xs devices */
+@media only screen
+and (max-width: 519px) {
+    .TRows {
+        flex: 0 1 70%;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .TRows .row {
+        flex: 0 1 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: visible;
+        align-items: stretch;
+    }
+}
+
+/* small devices */
+@media only screen
+and (min-width: 520px)
+and (max-width: 759px) {
+    .TRows {
+        height: calc(100% - 50px);
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: auto;
+    }
+    .TRows .row {
+        height: 100%;
+        min-height: 60px;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+}
+
+/* large devices */
+@media only screen
+and (min-width: 760px)
+and (max-width: 959px) {
+    .TRows {
+        height: calc(100% - 60px);
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: auto;
+    }
+    .TRows .row {
+        height: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+}
+
+/* xl devices */
+@media only screen
+and (min-width: 960px) {
+    .TRows {
+        height: calc(100% - 60px);
+        flex: 1 1 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: auto;
+    }
+    .TRows .row {
+        height: 100%;
+        min-height: 60px;
+        display: flex;
+        flex-flow: row nowrap;
+        overflow: hidden;
+    }
+}

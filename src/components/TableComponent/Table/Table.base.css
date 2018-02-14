@@ -1,0 +1,21 @@
+@import './Table.xs.css';
+@import './Table.sm.css';
+@import './Table.md.css';
+@import './Table.lg.css';
+
+.Table * {
+    box-sizing: border-box;
+}
+.Table {
+    display: flex;
+    flex-flow: column nowrap;
+    width: inherit;
+    height: inherit;
+}
+.Table .main {
+    flex: 1 1 auto;
+    display: flex;
+}
+.Table .foot {
+    border: solid;
+}

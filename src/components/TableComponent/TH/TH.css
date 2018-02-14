@@ -1,0 +1,11 @@
+.TH {
+    border: 1px inset white;
+    flex: 0 1 100%;
+    align-items: center;
+    display: flex;
+}
+
+.TH .content {
+    padding: 0 15px;
+    width: 100%;
+}

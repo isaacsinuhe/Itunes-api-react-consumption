@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+.App .searchBox {
+  height: 100px;
+  font-size: 2em;
+}
+
+.App .musicTable {
+  height: 400px;
+}

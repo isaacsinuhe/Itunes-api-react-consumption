@@ -1,0 +1,11 @@
+/* xs devices */
+@media only screen
+and (max-width: 519px) {
+    .Table .main {
+        height: 93%;
+        flex-flow: row nowrap;
+    }
+    .Table .foot {
+        height: 7%;
+    }
+}

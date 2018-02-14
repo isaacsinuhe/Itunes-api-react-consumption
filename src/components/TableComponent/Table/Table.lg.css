@@ -1,0 +1,11 @@
+/* large devices */
+@media only screen
+and (min-width: 960px) {
+    .Table .main {
+        height: calc(100% - 40px);
+        flex-flow: column nowrap;
+    }
+    .Table .foot {
+        height: 40px;
+    }
+}
